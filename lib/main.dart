@@ -45,7 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
         color: Colors.blue,
         buttonBackgroundColor: Colors.blue,
         height: 60.0,
-        animationDuration: Duration(milliseconds: 300),
+        animationDuration: Duration(milliseconds: 400),
         animationCurve: Curves.easeInOut,
         items: <Widget>[
           Icon(Icons.verified_user, size: 22.0, color: Colors.white),
@@ -104,7 +104,7 @@ class _MyParentState extends State<MyParent> with TickerProviderStateMixin{
         duration: const Duration(milliseconds: 400),
         vsync: this
     );
-    animation = CurvedAnimation(parent: _controller, curve: Curves.easeInCubic);
+    animation = CurvedAnimation(parent: _controller, curve: Curves.easeInCirc);
     _controller.forward();
   }
 
@@ -151,8 +151,4 @@ class MyBody extends StatelessWidget {
     );
   }
 }
-
-
-
-
 
