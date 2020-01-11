@@ -62,20 +62,21 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+// dummy page 1
 class MyUser extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MyParent(meText: 'This is the USER page', iconData: Icons.people_outline,);
   }
 }
-
+// dummy page 2
 class MyAdd extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MyParent(meText: 'This is the ADD page', iconData: Icons.add,);
   }
 }
-
+// dummy page 3
 class MyList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
